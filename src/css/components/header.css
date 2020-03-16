@@ -1,0 +1,30 @@
+.c-header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  color: #fff;
+  z-index: 3;
+  padding: 35px 70px;
+}
+.c-header.bg-black {
+  color: #272727;
+}
+.c-header .logo {
+  position: relative;
+  z-index: 5;
+}
+.c-header .container-fluid {
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 768px) {
+  .c-header {
+    color: #272727;
+  }
+}
+@media (max-width: 576px) {
+  .c-header {
+    padding: 20px 30px;
+  }
+}

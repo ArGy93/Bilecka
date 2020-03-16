@@ -1,0 +1,117 @@
+.l-shop {
+  padding: 70px;
+  background-color: white;
+  overflow: hidden;
+}
+.l-shop .slick-dots {
+  right: -50px;
+  top: 48%;
+}
+.l-shop .is-left {
+  font-family: EuropeDemi;
+  font-size: 37px;
+  line-height: 44px;
+  color: #272727;
+}
+.l-shop__input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #DEDEDE;
+  border-radius: 26px;
+  padding: 14px 30px;
+}
+.l-shop__input img {
+  margin-right: 20px;
+}
+.l-shop__products {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+.l-shop ul.products {
+  position: relative;
+}
+.l-shop ul.products:after {
+  content: '';
+  display: inline-block;
+  height: 1px;
+  left: 0;
+  right: 0;
+  background-color: white;
+  position: absolute;
+  bottom: 32px;
+  z-index: 1;
+}
+@media (max-width: 992px) {
+  .l-shop ul.products:before {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    position: absolute;
+    right: 0px;
+    z-index: 1;
+  }
+}
+.l-shop .c-product {
+  position: relative;
+  counter-increment: myCounter;
+}
+.l-shop .c-product:before {
+  position: absolute;
+  right: 25px;
+  top: 15px;
+  font-size: 28px;
+  line-height: 32px;
+  font-family: Europe;
+  color: #D9D9D9;
+  content: "0" counter(myCounter);
+}
+.l-shop .c-product__title {
+  padding-right: 50px;
+}
+.l-shop .c-product__border {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 50px;
+}
+.l-shop .c-product.last .c-product__border {
+  border-right: none;
+}
+@media (max-width: 992px) {
+  .l-shop .c-product.last .c-product__border {
+    border-right: 1px solid #DEDEDE;
+  }
+}
+@media (max-width: 768px) {
+  .l-shop {
+    padding: 30px 15px;
+  }
+  .l-shop .c-product:before {
+    right: 0;
+  }
+}
+@media (max-width: 576px) {
+  .l-shop .is-left {
+    font-size: 28px;
+    line-height: 32px;
+    font-family: Europe;
+    margin-bottom: 20px;
+  }
+  .l-shop .is-right {
+    width: 100%;
+  }
+  .l-shop__input {
+    width: 100%;
+    justify-content: center;
+  }
+  .l-shop__products {
+    margin-top: 40px;
+  }
+  .l-shop .c-product__border {
+    margin-bottom: 0;
+  }
+}

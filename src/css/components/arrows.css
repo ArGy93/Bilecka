@@ -1,0 +1,9 @@
+.c-arrows {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.c-arrows .is-arrow {
+  margin: 0 8px;
+  cursor: pointer;
+}

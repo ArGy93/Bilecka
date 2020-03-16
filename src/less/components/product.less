@@ -1,0 +1,156 @@
+.c-product {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	border: 1px solid #e5e5e5;
+  padding: 15px 30px 15px 30px;
+  overflow: hidden;
+  height: 100%;
+
+  &:hover {
+
+    .c-product__img {
+      transform: scale(1.2);
+    }
+
+  	.c-product__content {
+      transform: translateY(-100%);
+  	}
+
+  	.c-product__desc {
+	    opacity: 1;
+    	visibility: visible;
+    	transform: translateY(0%);	    
+  	}
+
+    .c-product__icons {
+      opacity: 1;
+      visibility: visible;
+      right: 10px;
+
+    }
+	
+		&:after {
+			opacity: 1;
+		}
+  }
+
+  &.is-empty {
+    .u-btn {
+      background-color: #F5F5F5;
+      color: #AD7633;
+    }
+
+    .c-product__price {
+      color: #D48A89;
+      font-size: 16px;
+    }
+
+    .c-product__icons {
+      display: none;
+    }
+
+    .c-product__img {
+      transform: scale(1);
+    }
+  }
+
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+    background-color: rgba(255,255,255,0.7);
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.3s ease;
+	}
+
+  &__img {
+  	padding: 20px 40px;
+    transition: all 0.4s ease;
+  }
+
+  &__content {
+    transition: all 0.3s ease;
+    z-index: 2;
+    position: relative;
+    transform: translateY(0px);
+  }
+
+  &__title {
+  	color: #54595f;
+    font-family: "Oswald", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    display: inline-block;
+
+    &:hover {
+    	color: #ffc139;
+    }
+  }
+
+  &__price {
+    font-family: "Oswald", Sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #ffc139;
+
+    &-old {
+      color: #333;
+      margin-right: 10px;
+      text-decoration: line-through;
+      font-size: 19px;
+    }
+  }
+
+  &__desc {
+  	opacity: 0;
+		visibility: hidden;
+    margin-top: 20px;
+    position: relative;
+    transform: translateY(100%);
+    transition: all 0.5s ease;
+    margin-bottom: -60px;
+
+  	p {
+			font-family: "Montserrat", Sans-serif;
+	    font-size: 10px;
+	    font-weight: 300;
+	    text-transform: none;
+	    font-style: normal;
+	    letter-spacing: 1px;
+	    color: #333333;  		
+  	}
+  }
+
+  &__icons {
+    position: absolute;
+    z-index: 5;
+    right: -50px;
+    top: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+
+    &-item {
+      margin-bottom: 15px;
+      color: white;
+      background-color: #ffc139;
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+
+  }
+
+
+}

@@ -1,0 +1,51 @@
+.c-tab {
+	// max-width: 700px;
+	// margin: 50px auto;
+
+	&__nav {
+		overflow: auto;
+		display: flex;
+		align-items: center;
+    justify-content: space-around;
+	}
+
+	&__item {
+		padding: 10px 15px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		font-weight: bold;
+		font-size: 24px;
+
+		img {
+			margin-bottom: 10px;
+		}
+
+		&.is-active {
+			color: #ffc139;
+		}
+	}
+
+	&__content {
+    margin-top: 50px;
+		position: relative;
+
+		.content {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			transition: all 0.3s ease;
+			opacity: 0;
+			visibility: hidden;
+
+			&.is-active {
+				position: static;
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+}

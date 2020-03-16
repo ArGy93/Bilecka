@@ -1,0 +1,120 @@
+.u-container {
+  width: 100%;
+  max-width: 1560px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.u-btn {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 0;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 12px;
+  line-height: 1.6;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: 2px;
+  display: inline-block;
+  background-color: #ffc139;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 23px 23px 23px 23px;
+  padding: 8px 24px 8px 17px;
+}
+.u-title {
+  font-family: EuropeDemi;
+  font-size: 89px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #272727;
+  letter-spacing: 1px;
+}
+@media (max-width: 1200px) {
+  .u-title {
+    font-size: 69px;
+  }
+}
+@media (max-width: 768px) {
+  .u-title {
+    font-size: 52px;
+  }
+}
+@media (max-width: 576px) {
+  .u-title {
+    font-size: 37px;
+  }
+}
+.u-subtitle {
+  font-family: EuropeDemi;
+  font-size: 67px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #272727;
+  letter-spacing: 1px;
+}
+@media (max-width: 1200px) {
+  .u-subtitle {
+    font-size: 47px;
+  }
+}
+@media (max-width: 768px) {
+  .u-subtitle {
+    font-size: 40px;
+  }
+}
+@media (max-width: 576px) {
+  .u-subtitle {
+    font-size: 28px;
+  }
+}
+.u-pretitle {
+  font-family: EuropeDemi;
+  font-size: 37px;
+  line-height: 1.2;
+  color: #272727;
+}
+@media (max-width: 576px) {
+  .u-pretitle {
+    font-size: 28px;
+    font-family: Europe;
+  }
+}
+.u-flexbox {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.space-between {
+  justify-content: space-between;
+}
+.u-relative {
+  position: relative;
+  z-index: 2;
+}
+.u-col {
+  margin-bottom: 15px;
+}
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.underline {
+  text-decoration: underline;
+}
+.is-orange {
+  color: #FC6603;
+}
+.is-blue {
+  color: #7CAEF5;
+}
+.is-yellow {
+  color: #ffc139;
+}

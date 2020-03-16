@@ -1,0 +1,143 @@
+.c-sidebar {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin-right: 95px;
+	width: 75px;
+
+	ul {
+		position: sticky;
+		top: 20px;
+		z-index: 999;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		margin: 10px 0;
+		background-color: #F4F6F3;
+		font-size: 20px;
+		text-transform: uppercase;
+
+		&.js-cat-menu {
+			position: relative;
+			margin-top: 0;
+	    padding: 0;
+			background-color: transparent;
+		}
+
+		&-main {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			position: relative;
+			z-index: 1;
+			width: 100%;
+			min-height: 75px;
+			padding: 10px;
+			background-color: #FFB661;
+
+			.fa {
+				font-size: 45px;
+				margin-bottom: -10px;
+		    line-height: 30px;
+			}
+		}
+	}
+
+	&__submenu {
+
+		.c-sidebar__item {
+			position: relative;
+			width: 75px;
+			height: 75px;
+			transform: translateY(-100%);
+			opacity: 0;
+			visibility: hidden;
+			transition: all 0.3s ease;
+
+			&.is-active {
+				opacity: 1;
+				visibility: visible;
+				transform: translateY(0%);
+			}
+
+			&-link {
+				display: flex;
+				align-items: center;
+    		justify-content: center;
+				width: 100%;
+				padding: 10px;
+
+				img {
+					width: 100%;
+				}
+			}
+
+			&-info {
+				display: flex;
+    		align-items: center;
+				position: absolute;
+				top: 0;
+				left: 75px;
+				bottom: 0;
+				width: 0;
+				padding-left: 20px;
+				opacity: 0;
+				overflow: hidden;
+				background-color: #F4F6F3;
+				transition: all 0.3s ease;
+
+				&.is-active {
+					width: 250px;
+					opacity: 1;
+				}
+
+				&.burger-item {
+					background-position: center right;
+					background-repeat: no-repeat;
+					background-size: 28% auto;
+					background-image: url('../img/burger.png');
+				}
+
+				&.pizza-item {
+					background-position: top right;
+					background-repeat: no-repeat;
+					background-size: 27% auto;
+					background-image: url('../img/pizza.png');
+				}
+
+				&.drinks-item {
+					background-position: center right;
+					background-repeat: no-repeat;
+					background-size: 30% auto;
+					background-image: url('../img/drinks.png');
+				}
+
+				&.pasta-item {
+					background-position: top right;
+					background-repeat: no-repeat;
+					background-size: 27% auto;
+					background-image: url('../img/pasta.png');
+				}
+
+				&.soup-item {
+					background-position: top right;
+					background-repeat: no-repeat;
+					background-size: 30% auto;
+					background-image: url('../img/soup.png');
+				}
+
+				&.sushi-item {
+					background-position: center right;
+					background-repeat: no-repeat;
+					background-size: 35% auto;
+					background-image: url('../img/sushi.png');
+				}
+			}
+		}
+	}
+}

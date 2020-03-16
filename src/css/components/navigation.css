@@ -1,0 +1,19 @@
+.navigation {
+  margin: 30px 0;
+}
+.navigation .page-numbers {
+  font-size: 16px;
+  line-height: 18px;
+  padding: 0 15px;
+  position: relative;
+}
+.navigation .page-numbers.current:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  bottom: -10px;
+  height: 3px;
+  left: 0;
+  right: 0;
+  background-color: #840A2D;
+}

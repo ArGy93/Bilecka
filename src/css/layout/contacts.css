@@ -1,0 +1,13 @@
+.l-contacts .is-map {
+  height: 700px;
+  position: relative;
+  bottom: -150px;
+  box-shadow: 0 -1px 5px -2px #333333;
+}
+@media (max-width: 440px) {
+  .l-contacts .is-map {
+    bottom: 0;
+    margin: 25px 0;
+    height: 450px;
+  }
+}
